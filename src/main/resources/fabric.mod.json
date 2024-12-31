@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "chronicled-umbrellas",
+	"version": "${version}",
+	"name": "Chronicled Umbrellas",
+	"description": "A small mod adding various umbrellas that might just make your exploration a little bit more fun.",
+	"authors": [
+		"Scotticles"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/chronicled-umbrellas/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.scotticles.chronicledumbrellas.ChronicledUmbrellas"
+		],
+		"client": [
+			"net.scotticles.chronicledumbrellas.ChronicledUmbrellasClient"
+		],
+		"fabric-datagen": [
+			"net.scotticles.chronicledumbrellas.ChronicledUmbrellasDataGenerator"
+		]
+	},
+	"mixins": [
+		"chronicled-umbrellas.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.9",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
