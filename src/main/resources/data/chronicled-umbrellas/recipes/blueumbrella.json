@@ -2,13 +2,13 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "pattern": [
-    "GGG",
+    "BBB",
     "WIW",
     " S "
   ],
   "key": {
-    "G": {
-      "item": "minecraft:green_wool"
+    "B": {
+      "item": "minecraft:blue_wool"
     },
     "W": {
       "item": "minecraft:white_dye"
@@ -21,6 +21,6 @@
     }
   },
   "result": {
-    "item": "chronicled-umbrellas:forestumbrella"
+    "item": "chronicled-umbrellas:blueumbrella"
   }
 }
