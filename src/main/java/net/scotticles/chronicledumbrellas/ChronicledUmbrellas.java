@@ -1,9 +1,11 @@
 package net.scotticles.chronicledumbrellas;
 
 import net.fabricmc.api.ModInitializer;
-
+import net.scotticles.chronicledumbrellas.item.ModItemGroups;
+import net.scotticles.chronicledumbrellas.item.ModItems;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
 
 public class ChronicledUmbrellas implements ModInitializer {
 	public static final String MOD_ID = "chronicled-umbrellas";
@@ -20,5 +22,7 @@ public class ChronicledUmbrellas implements ModInitializer {
 		// Proceed with mild caution.
 
 		LOGGER.info("Hello Fabric world!");
+		ModItemGroups.registerItemGroups();
+		ModItems.registerModItems();
 	}
 }
