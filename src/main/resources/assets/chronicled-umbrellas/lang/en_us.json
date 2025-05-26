@@ -1,4 +1,5 @@
 {
+  "itemgroup.chronicled_umbrellas_items": "Chronicled Umbrellas",
   "item.chronicled-umbrellas.blackumbrella": "Black Umbrella",
   "item.chronicled-umbrellas.blueumbrella": "Blue Umbrella",
   "item.chronicled-umbrellas.brownumbrella": "Brown Umbrella",
@@ -7,6 +8,5 @@
   "item.chronicled-umbrellas.purpleumbrella": "Purple Umbrella",
   "item.chronicled-umbrellas.redumbrella": "Red Umbrella",
   "item.chronicled-umbrellas.whiteumbrella": "White Umbrella",
-  "item.chronicled-umbrellas.yellowumbrella": "Yellow Umbrella",
-  "itemgroup.chronicledumbrellasitems": "Chronicled Umbrellas"
+  "item.chronicled-umbrellas.yellowumbrella": "Yellow Umbrella"
 }

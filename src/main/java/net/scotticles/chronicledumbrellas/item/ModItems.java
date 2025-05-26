@@ -12,15 +12,15 @@ import net.scotticles.chronicledumbrellas.ChronicledUmbrellas;
 import net.scotticles.chronicledumbrellas.item.custom.UmbrellaItem;
 
 public class ModItems {
-    public static final Item RedUmbrella = registerItem("redumbrella", new UmbrellaItem(new FabricItemSettings()));
-    public static final Item OrangeUmbrella = registerItem("orangeumbrella", new UmbrellaItem(new FabricItemSettings()));
-    public static final Item YellowUmbrella = registerItem("yellowumbrella", new UmbrellaItem(new FabricItemSettings()));
-    public static final Item GreenUmbrella = registerItem("greenumbrella", new UmbrellaItem(new FabricItemSettings()));
-    public static final Item BlueUmbrella = registerItem("blueumbrella", new UmbrellaItem(new FabricItemSettings()));
-    public static final Item PurpleUmbrella = registerItem("purpleumbrella", new UmbrellaItem(new FabricItemSettings()));
-    public static final Item BlackUmbrella = registerItem("blackumbrella", new UmbrellaItem(new FabricItemSettings()));
-    public static final Item WhiteUmbrella = registerItem("whiteumbrella", new UmbrellaItem(new FabricItemSettings()));
-    public static final Item BrownUmbrella = registerItem("brownumbrella", new UmbrellaItem(new FabricItemSettings()));
+    public static final Item RedUmbrella = registerItem("redumbrella", new UmbrellaItem(new FabricItemSettings().maxCount(1)));
+    public static final Item OrangeUmbrella = registerItem("orangeumbrella", new UmbrellaItem(new FabricItemSettings().maxCount(1)));
+    public static final Item YellowUmbrella = registerItem("yellowumbrella", new UmbrellaItem(new FabricItemSettings().maxCount(1)));
+    public static final Item GreenUmbrella = registerItem("greenumbrella", new UmbrellaItem(new FabricItemSettings().maxCount(1)));
+    public static final Item BlueUmbrella = registerItem("blueumbrella", new UmbrellaItem(new FabricItemSettings().maxCount(1)));
+    public static final Item PurpleUmbrella = registerItem("purpleumbrella", new UmbrellaItem(new FabricItemSettings().maxCount(1)));
+    public static final Item BlackUmbrella = registerItem("blackumbrella", new UmbrellaItem(new FabricItemSettings().maxCount(1)));
+    public static final Item WhiteUmbrella = registerItem("whiteumbrella", new UmbrellaItem(new FabricItemSettings().maxCount(1)));
+    public static final Item BrownUmbrella = registerItem("brownumbrella", new UmbrellaItem(new FabricItemSettings().maxCount(1)));
 
     private static void addItemsToToolsItemGroup(FabricItemGroupEntries entries) {
         entries.add(RedUmbrella);
