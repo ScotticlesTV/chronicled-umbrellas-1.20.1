@@ -17,6 +17,7 @@ public class UmbrellaItem extends Item {
         super(settings);
     }
 
+    // When the player starts using the umbrella, play a sound and set the current hand.
     @Override
     public TypedActionResult<ItemStack> use(World world, PlayerEntity user, Hand hand) {
         ItemStack stack = user.getStackInHand(hand);
@@ -26,10 +27,10 @@ public class UmbrellaItem extends Item {
 
         user.setCurrentHand(hand);
 
-
         return TypedActionResult.consume(stack);
     }
 
+    // Once the player stops using the umbrella, play a sound.
     @Override
     public void onStoppedUsing(ItemStack stack, World world, LivingEntity user, int remainingUseTime) {
         if(!world.isClient()) {
@@ -37,6 +38,7 @@ public class UmbrellaItem extends Item {
         }
     }
 
+    // Set the max use time to be super high
     @Override
     public int getMaxUseTime(ItemStack stack) {
         return 72000;
@@ -50,13 +52,14 @@ public class UmbrellaItem extends Item {
             boolean usingUmbrella =
                     player.isUsingItem() && player.getActiveItem().getItem() instanceof UmbrellaItem;
 
+            // Check whether the player is using an umbrella
             if (usingUmbrella) {
                 if (!player.isOnGround() && !player.isSubmergedInWater() && player.getVelocity().y < 0) {
                     // Get the player's velocity
                     Vec3d vel = player.getVelocity();
                     // Set the player's y-velocity to 3/4ths what it was
                     player.setVelocity(vel.x, vel.y * 0.75, vel.z);
-                    player.velocityDirty = true; // Important for syncing on server
+                    player.velocityDirty = true; // Tells the server the player's velocity has changed and to update it.
                     // Disable fall damage
                     player.fallDistance = 0.0F;
                 }

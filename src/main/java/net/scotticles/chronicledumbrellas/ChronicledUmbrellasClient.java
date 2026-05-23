@@ -6,7 +6,6 @@ import net.minecraft.item.Item;
 import net.minecraft.util.Identifier;
 import net.scotticles.chronicledumbrellas.event.UmbrellaClientUpdate;
 import net.scotticles.chronicledumbrellas.item.ModItems;
-import net.scotticles.chronicledumbrellas.item.custom.UmbrellaItem;
 
 public class ChronicledUmbrellasClient implements ClientModInitializer {
 

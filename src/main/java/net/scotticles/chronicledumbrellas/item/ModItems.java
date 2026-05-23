@@ -30,9 +30,8 @@ public class ModItems {
         entries.add(BlueUmbrella);
         entries.add(PurpleUmbrella);
         entries.add(BlackUmbrella);
-        entries.add(BrownUmbrella);
         entries.add(WhiteUmbrella);
-
+        entries.add(BrownUmbrella);
     }
 
     private static Item registerItem(String name, Item item) {

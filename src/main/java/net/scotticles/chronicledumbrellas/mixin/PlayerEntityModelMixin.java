@@ -25,6 +25,7 @@ public abstract class PlayerEntityModelMixin<T extends LivingEntity>
         super(root);
     }
 
+        // Setting player model angles method
         @Inject(method = "setAngles", at = @At("TAIL"))
         private void umbrellaPose(
             T entity,
@@ -35,14 +36,17 @@ public abstract class PlayerEntityModelMixin<T extends LivingEntity>
             float headPitch,
             CallbackInfo ci
         ) {
+
+        // If not a player, stop.
         if (!(entity instanceof PlayerEntity player))
             return;
 
 
-        // Check if the umbrella is being used (if not, stop)
+        // Check if the umbrella is being used
         boolean usingUmbrella =
                 player.isUsingItem() && player.getActiveItem().getItem() instanceof UmbrellaItem;
 
+        // If not using an umbrella, stop.
         if (!usingUmbrella) {
             return;
         }

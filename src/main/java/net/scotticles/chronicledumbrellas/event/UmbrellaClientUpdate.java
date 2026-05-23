@@ -3,7 +3,6 @@ package net.scotticles.chronicledumbrellas.event;
 import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientTickEvents;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.network.ClientPlayerEntity;
-import net.minecraft.item.ItemStack;
 import net.minecraft.util.math.Vec3d;
 import net.scotticles.chronicledumbrellas.item.custom.UmbrellaItem;
 
