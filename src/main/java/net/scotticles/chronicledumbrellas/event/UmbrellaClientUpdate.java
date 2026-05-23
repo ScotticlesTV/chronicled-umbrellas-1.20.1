@@ -15,20 +15,22 @@ public class UmbrellaClientUpdate {
             ClientPlayerEntity player = MinecraftClient.getInstance().player;
 
             if (player != null) {
-                ItemStack mainHand = player.getMainHandStack();
-                ItemStack offHand = player.getOffHandStack();
 
-                boolean holdingUmbrella = mainHand.getItem() instanceof UmbrellaItem || offHand.getItem() instanceof UmbrellaItem;
+                boolean usingUmbrella =
+                        player.isUsingItem() && player.getActiveItem().getItem() instanceof UmbrellaItem;
 
-                if (holdingUmbrella && !player.isOnGround() && !player.isSubmergedInWater() && player.getVelocity().y < 0) {
-                    Vec3d vel = player.getVelocity();
-                    double newY = vel.y * 0.75; // Reduce vertical speed (adjust as needed)
-                    player.setVelocity(vel.x, newY, vel.z);
-                    player.velocityDirty = true; // Important for syncing on server
+                if (usingUmbrella) {
+                    if (!player.isOnGround() && !player.isSubmergedInWater() && player.getVelocity().y < 0) {
+                        // Get the player's velocity
+                        Vec3d vel = player.getVelocity();
+                        // Set the player's y-velocity to 3/4ths what it was
+                        player.setVelocity(vel.x, vel.y * 0.75, vel.z);
+                        player.velocityDirty = true; // Important for syncing on server
+                        // Disable fall damage
+                        player.fallDistance = 0.0F;
+                    }
                 }
             }
         });
-
-
-}
+    }
 }

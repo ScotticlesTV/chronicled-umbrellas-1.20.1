@@ -3,6 +3,7 @@ package net.scotticles.chronicledumbrellas;
 import net.fabricmc.api.ModInitializer;
 import net.scotticles.chronicledumbrellas.item.ModItemGroups;
 import net.scotticles.chronicledumbrellas.item.ModItems;
+import net.scotticles.chronicledumbrellas.sound.ModSounds;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -21,8 +22,9 @@ public class ChronicledUmbrellas implements ModInitializer {
 		// However, some things (like resources) may still be uninitialized.
 		// Proceed with mild caution.
 
-		LOGGER.info("Hello Fabric world!");
+		LOGGER.info("\"I'm Mary Poppins Y'all!\"");
 		ModItemGroups.registerItemGroups();
 		ModItems.registerModItems();
+		ModSounds.registerSounds();
 	}
 }

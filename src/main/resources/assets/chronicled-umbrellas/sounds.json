@@ -1,0 +1,14 @@
+{
+  "openumbrella": {
+    "subtitle": "sounds.chronicled-umbrellas.openumbrella",
+    "sounds": [
+      "chronicled-umbrellas:openumbrella"
+    ]
+  },
+  "closeumbrella": {
+    "subtitle": "sounds.chronicled-umbrellas.closeumbrella",
+    "sounds": [
+      "chronicled-umbrellas:closeumbrella"
+    ]
+  }
+}
