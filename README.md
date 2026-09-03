@@ -5,8 +5,12 @@
 
 Chronicled Umbrellas adds 9 umbrellas in various colors to your game to make your exploration safer. Open an your umbrellas in the air to slow your fall and take no fall damage.
 
-<img width="2560" height="1566" alt="All Umbrella Colors Screenshot" src="https://github.com/user-attachments/assets/e317ed44-1fb5-4c86-a0ab-486f4100ea48" />
+<img alt="All Umbrella Colors Screenshot" src="https://github.com/user-attachments/assets/9e466b84-e22f-403b-8b2d-0273f3a8482b" />
 
 ## Features
 * Craftable Umbrellas
+
+<img alt="Umbrella Recipes GIF" src="https://github.com/user-attachments/assets/08a9f9f8-14b4-4daa-8a07-99260ba43daf" />
+
 * Open And Closed States 
+<img alt="Red Umbrella - Open And Closed States" src="https://github.com/user-attachments/assets/c545d164-ac72-4b6e-b7ba-f63bde3da00d" />
