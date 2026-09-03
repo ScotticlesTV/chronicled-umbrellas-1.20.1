@@ -8,10 +8,14 @@ Chronicled Umbrellas adds 9 umbrellas in various colors to your game to make you
 <img alt="All Umbrella Colors Screenshot" src="https://github.com/user-attachments/assets/9e466b84-e22f-403b-8b2d-0273f3a8482b" />
 
 ## Features
-* Craftable Umbrellas
+### Craftable Umbrellas
+
 All umbrella variants are craftable in survivable and re-dyable to obtain the other variants without having to craft a new umbrella entirely.
+
 <img alt="Umbrella Recipes GIF" src="https://github.com/user-attachments/assets/08a9f9f8-14b4-4daa-8a07-99260ba43daf" />
 
-* Open And Closed States
+### Open And Closed States
+
 Umbrellas default to a closed state, but when the player holds their use key, right-click by default, the umbrella opens and slows the player's fall, negating any fall damage they should take upon hitting the ground.
+
 <img alt="Red Umbrella - Open And Closed States" src="https://github.com/user-attachments/assets/c545d164-ac72-4b6e-b7ba-f63bde3da00d" />
